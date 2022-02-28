@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* ### Primary */
+--Strong-cyan: hsl(172, 67%, 45%);
+
+/* ### Neutral */
+
+--Very-dark-cyan: hsl(183, 100%, 15%);
+--Dark-grayish-cyan-1: hsl(186, 14%, 43%);
+--Dark-grayish-cyan-2: hsl(184, 14%, 56%);
+--Light-grayish-cyan-1: hsl(185, 41%, 84%);
+--Light-grayish-cyan-2: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: "Space Mono", monospace;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Light-grayish-cyan-1);
+}
+header{
+    margin:30px auto;
+}
+.white-page{
+    background-color: var(--White);
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 15px 25px;
+}
+h6{
+    color: var(--Dark-grayish-cyan-2);
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+.green-box{
+    display: flex;
+    background-color: var(--Light-grayish-cyan-1);
+    justify-content: space-between;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding:  5px 10px;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: end;
+    font-size: 20px;
+}
+.box-of-tips{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 10px;
+    place-items: center;
+    margin: 15px auto 25px;
+}
+.box-of-tips p{
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    border-radius: 3px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-weight: bold;
+}
+.box-of-tips p:hover{
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan-1);
+    color:var(--Very-dark-cyan);
+}
+.box-of-tips input{
+    text-align: center;
+    background-color: var(--Light-grayish-cyan-1);
+    width: 155px;
+    height: 35px;
+    opacity: 0.5;
+}
+.white-page .error{
+    display: flex;
+    justify-content: space-between;
+}
+.white-page .error .red-error{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.result{
+    margin-top: 20px;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--White);
+}
+.result .amount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.result .value{
+    font-size: 30px;
+}
+.result .amount .the-text{
+    font-size: 10px;
+}
+.result .amount p{
+    margin-top: 3px;
+    opacity: 0.5;
+}
+.result .amount .value{
+    color: var(--Strong-cyan);
+}
+.result input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(172deg 40% 35%);
+   width: 100%;
+   border-radius: 3px;
+   height: 30px;
+   color: var(--Very-dark-cyan);
+}
+.result input:hover{
+    cursor: pointer;
+    background-color: var(--Light-grayish-cyan-1);
+    color:var(--Very-dark-cyan);
+}
+.result .value span{
+    font-weight: bold;
+}
+@media (min-width:1024px) {
+    .white-page{
+        display: flex;
+        margin: 150px auto;
+        justify-content: space-between;
+        width: 80%;
+        border-radius: 30px;
+        
+    }
+    header{
+        margin: 100px auto -40px;
+    }
+    .result{
+        width: 400px;
+        height: 300px;
+    }
+    .result .amount{
+        margin-top: 20px;
+    }
+    .result input{
+        height: 45px;
+        margin-top: 95px;
+    }
+    .box-of-tips {
+        grid-template-columns: repeat(3,100px);
+        margin: 15px auto 0;
+    }
+    .box-of-tips input{
+        width: 100px;
+    }
+}
+    @media (min-width:1200px){
+        .white-page{
+            width: 65%;
+        }
+    }
+        @media (min-width:1400px){
+            .white-page{
+                width: 60%;
+            }
+
+    }
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

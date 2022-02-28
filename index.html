@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="bo">
+  <main>
+    <header>
+      <img src="logo.svg" alt="">
+    </header>
+    <div class="white-page">
+      <div class="left-page">
+        <h6>Bill</h6>
+        <div class="green-box">
+           <img src="icon-dollar.svg" > <input type="number" placeholder="0" id="bill" min="0" >
+        </div>
+        <h6>Select Tip %</h6>
+        <div class="box-of-tips">
+          <p class="tips">5%</p> <p class="tips"> 10%</p> <p class="tips">15%</p> 
+          <p class="tips">25%</p> <p class="tips">50%</p>
+          <input type="number" placeholder="Custom" id="custom" min="0" >
+        </div>
+
+           <div class="error">
+            <h6 id="test">Number of People</h6> <h6 class="red-error">Can't be Zero</h6>
+           </div>
+         <div class="green-box" id="no-zero">
+          <img src="icon-person.svg"> <input type="number" placeholder="0" id="people-input" min="0">
+        </div>
+      </div>
+ 
+      <div class="right-page">
+        <div class="result">
+          <div class="amount">
+            <div class="the-text">
+              <h3 >Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="value">
+               <span>$</span><span class="tip-amount" >0.0</span>
+            </div>
+           
+          </div>
+          <div class="amount">
+            <div class="the-text">
+              <h3 >Total</h3>
+              <p>/ person</p>
+            </div>
+            <div class="value">
+               <span>$</span><span class="total">0.0</span>
+            </div>
+           
+          </div>
+         <input type="submit" value="Reset" id="reset" >
+        </div>
+
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Hesham barahim</a>.
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
